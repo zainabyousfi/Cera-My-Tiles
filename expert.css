@@ -1,0 +1,48 @@
+.input-field{
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 0px;
+    padding-left: 5px;
+}
+
+label, .label{
+    color: black;
+    font-size: 18px;
+}
+
+#CalculateBtn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.calculatorbg{
+    background-image: url(https://img.freepik.com/free-photo/abstract-orange-background-layout-designstudioroom-web-template-business-report-with-smooth-circle-g_1258-54126.jpg?w=826&t=st=1700567995~exp=1700568595~hmac=97c2f2fb9e90f6f538ff3e064e3f18e4d617d0d79f5ece7811df180acf5dce58);
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.calculatorwrap{
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.whitetext{
+    color: rgb(255, 255, 255);
+}
+.video{
+    display: inline;
+    position: relative;
+    top: -50px;
+    left: 50px;
+}
+.video1{
+    display: inline;
+    position: relative;
+    top: -50px;
+    left: 90px;
+}

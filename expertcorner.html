@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <!-- expert.css -->
+    <link rel="stylesheet" href="expert.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100">
+    <link rel="stylesheet" href="slider.css">
+    
+    <!-- Tailwind Css Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind css end -->
+    <!-- header css -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Footer CDN Links -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+    <!-- Footer cdn link end -->
+    <title>Expert Corner</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+    <!-- Navbar staRT -->
+
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="#">
+                    <img src="Free_Sample_By_Wix-removebg-preview.png" alt="">
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__toggle-menu"></i>
+                    <i class="ri-close-line nav__toggle-close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                          Wall Tiles <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <!-- <i class="ri-flashlight-line"></i> -->
+                                        <img src="bathroom-icon.png" width="30px" alt="tiles">
+                                    </div>
+
+                                    <a href="category.html" id="BathroomWall" onclick="BathroomWall()"><span class="dropdown__title">Bathroom Wall Tiles</span></a>
+
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="category.html" id="BathroomWallBlackTile" onclick="BathroomWallBlackTile()" class="dropdown__link">Black Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="BathroomWallGreyTile"  onclick="BathroomWallGreyTile()" class="dropdown__link">Grey Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="BathroomWallLightOrangeTile"  onclick="BathroomWallLightOrangeTile()" class="dropdown__link">Light Orange Tiles</a>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown__icon">
+                                        <!-- <i class="ri-flashlight-line"></i> -->
+                                        <img src="bedroom-icon.png" width="30px">
+                                    </div>
+
+
+                                    <a href="category.html" id="wallbedroom" onclick="wallbedroom()">   <span class="dropdown__title">Bedroom</span></a>
+
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="category.html" id="wallbedroombrowntile"  onclick="wallbedroombrowntile()" class="dropdown__link">Brown Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="wallbedroomgreytile" onclick="wallbedroomgreytile()" class="dropdown__link">Grey Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="wallbedroomlightsilver" onclick="wallbedroomlightsilver()"        class="dropdown__link">Light Silver Tiles</a>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+
+
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <!-- <i class="ri-heart-3-line"></i> -->
+                                        <img src="kitchen-icon.png" width="30px" alt="">
+                                    </div>
+                                    <a href="category.html" id="wallkitchen" onclick="wallkitchen()" ><span class="dropdown__title">Kitchen Wall Tiles</span></a>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="category.html" id="wallkitchenblackwhite"   onclick="wallkitchenblackwhite()" class="dropdown__link">Black and white is dynamite
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="wallkitchenblack" onclick="wallkitchenblack()" class="dropdown__link">Black Back Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="wallkitchenwhite" onclick="wallkitchenwhite()" class="dropdown__link">White Tiles</a>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown__icon">
+                                        <!-- <i class="ri-heart-3-line"></i> -->
+                                        <img src="commercial_places-icon.png" width="30px" alt="">
+                                    </div>
+                                    <a href="category.html" id="wallcommercialspaces" onclick="wallcommercialspaces()" ><span class="dropdown__title">Commercial Spaces Tiles</span></a>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="category.html" id="wallcommercialspacesceramic" onclick="wallcommercialspacesceramic()" class="dropdown__link">Ceramic Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="wallcommercialspacesWhite" onclick="wallcommercialspacesWhite()" class="dropdown__link">White Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="wallcommercialspacesGrey" onclick="wallcommercialspacesGrey()" class="dropdown__link">Grey Tiles</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <!-- <i class="ri-book-mark-line"></i> -->
+                                        <img src="outdoor-icon.png" width="30px" alt="">
+                                    </div>
+
+                                    <a href="category.html" id="walloutdoor" onclick="walloutdoor()" ><span class="dropdown__title">Outdoor Wall Tiles</span></a>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="category.html" id="walloutdoorgreyWhite" onclick="walloutdoorgreyWhite()" class="dropdown__link">Grey White Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="walloutdoorRedclay" onclick="walloutdoorRedclay()" class="dropdown__link">Red Clay Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="walloutdoormoonWhite" onclick="walloutdoormoonWhite()" class="dropdown__link">Moon White Tiles</a>
+                                        </li>
+                                        <!-- <li>
+                                        <a href="#" class="dropdown__link">Informatic security</a>
+                                    </li> -->
+                                    </ul>
+                                </div>
+
+
+
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <!-- <i class="ri-file-paper-2-line"></i> -->
+                                        <img src="living-room-icon.png" width="30px" alt="">
+                                    </div>
+
+                                    <a href="category.html" id="wallLivingroom" onclick="wallLivingroom()"><span class="dropdown__title">Living Room</span></a>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="category.html" id="wallLivingroomCream" onclick="wallLivingroomCream()" class="dropdown__link">Cream Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="wallLivingroomBlack" onclick="wallLivingroomBlack()" class="dropdown__link">Black Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="wallLivingroomWhite" onclick="wallLivingroomWhite()" class="dropdown__link">White Tiles</a>
+                                        </li>
+                                    </ul>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--=============== DROPDOWN 2 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            Floor Tiles <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        
+                                        <img src="bathroom-icon.png" width="30px" alt="">
+                                    </div>
+
+                                    <a href="category.html" id="Floorbathroom" onclick="Floorbathroom()"><span class="dropdown__title">Bathroom Floor Tiles</span></a>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="category.html" id="FloorbathroomBlack" onclick="FloorbathroomBlack()" class="dropdown__link">Black Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="FloorbathroomGrey" onclick="FloorbathroomGrey()" class="dropdown__link">Grey Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="FloorbathroomLightorange" onclick="FloorbathroomLightorange()" class="dropdown__link">Light Orange Tiles</a>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown_group">
+                                        <div class="dropdown__icon">
+                                            <img src="kitchen-icon.png" width="30px" alt="">
+                                        </div>
+                                        <br>
+                                        <a href="category.html" id="FloorKitchen" onclick="FloorKitchen()"><span class="dropdown__title">Kitchen Floor Tiles</span></a>
+
+                                        <ul class="dropdown__list">
+                                        <br>
+                                            <li>
+                                                <a href="category.html" id="FloorKitchenBlackandWhite" onclick="FloorKitchenBlackandWhite()" class="dropdown__link">Black and white is dynamite
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html" id="FloorKitchenBlack" onclick="FloorKitchenBlack()" class="dropdown__link">Black Back Tiles</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html" id="FloorKitchenWhite" onclick="FloorKitchenWhite()" class="dropdown__link">White Tiles</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <!-- <i class="ri-pen-nib-line"></i> -->
+                                        <img src="outdoor-icon.png" width="30px" alt="">
+                                    </div>
+
+                                    <a href="category.html" id="FlooroutDoor" onclick="FlooroutDoor()"><span class="dropdown__title">Outdoor Floor Tiles</span></a>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="category.html" id="FlooroutDoorGreyWhite" onclick="FlooroutDoorGreyWhite()" class="dropdown__link">Grey White Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="FlooroutDoorRedclay" onclick="FlooroutDoorRedclay()" class="dropdown__link">Red Clay Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="FlooroutDoorMoonWhite" onclick="FlooroutDoorMoonWhite()" class="dropdown__link">Moon White Tiles</a>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown__icon">
+                                        <!-- <i class="ri-pen-nib-line"></i> -->
+                                        <img src="living-room-icon.png" width="30px" alt="">
+                                    </div>
+
+                                    <a href="category.html" id="FloorLivingroom" onclick="FloorLivingroom()"><span class="dropdown__title">Living Room</span></a>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="category.html" id="FloorLivingroomCream" onclick="FloorLivingroomCream()" class="dropdown__link">Cream Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="FloorLivingroomBlack" onclick="FloorLivingroomBlack()" class="dropdown__link">Black Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="FloorLivingroomWhite" onclick="FloorLivingroomWhite()" class="dropdown__link">White Tiles</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <!-- <i class="ri-apps-2-line"></i> -->
+                                        <img src="commercial_places-icon.png" width="30px" alt="">
+                                    </div>
+
+                                    <a href="category.html" id="FloorCommercialSpaces" onclick="FloorCommercialSpaces()"><span class="dropdown__title">Commercial Spaces Tiles</span></a>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="category.html" id="FloorCommercialSpacesCeramic" onclick="FloorCommercialSpacesCeramic()" class="dropdown__link">Ceramic Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="FloorCommercialSpacesWhite" onclick="FloorCommercialSpacesWhite()" class="dropdown__link">White Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="FloorCommercialSpacesGrey" onclick="FloorCommercialSpacesGrey()" class="dropdown__link">Grey Tiles</a>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown__icon">
+                                        <!-- <i class="ri-apps-2-line"></i> -->
+                                        <img src="bedroom-icon.png" width="30px" alt="">
+                                    </div>
+
+                                    <a href="category.html" id="FloorBedroom" onclick="FloorBedroom()"><span class="dropdown__title">Bedroom</span></a>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="category.html" id="FloorBedroomBrown" onclick="FloorBedroomBrown()" class="dropdown__link">Brown Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="FloorBedroomGrey" onclick="FloorBedroomGrey()" class="dropdown__link">Grey Tiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" id="FloorBedroomLightSilver" onclick="FloorBedroomLightSilver()" class="dropdown__link">Light Silver Tiles</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <!--=============== DROPDOWN 3 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            Shop <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <!-- <i class="ri-community-line"></i> -->
+                                        <img src="app=products.png" width="30px" alt="">
+                                    </div>
+
+                                    <a href="products.html"><span class="dropdown__title">All Products</span></a>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="category.html" id="TilesKitchen" onclick="TilesKitchen()" class="dropdown__link">Tiles for Kitchen</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Tiles for Bathroom</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Tiles for living room</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <!-- <i class="ri-community-line"></i> -->
+                                        <img src="cart.png" width="30px" alt="">
+                                    </div>
+
+                                    <span class="dropdown__title">My cart</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">My favourites</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Wishlist</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <!-- <i class="ri-community-line"></i> -->
+                                        <img src="checkout.png" width="30px" alt="">
+                                    </div>
+
+                                    <span class="dropdown__title">Check Out</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">Paypal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Stripe</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Visa Card</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="expertcorner.html" class="nav__link">Expert Corner</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Navbar end -->
+
+<!-- blog start -->
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+        <h2 class="sm:text-5xl text-2xl font-medium text-center title-font text-gray-900 mb-4">CERA BLOGS</h2>
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://img.freepik.com/free-photo/abstract-weathered-texture-stained-dark-stucco-brown-painted-yellow-brick-wall-background_1258-150965.jpg?w=740&t=st=1700403205~exp=1700403805~hmac=bfdd89442d2f35ad927556dae423b44d3219b227ae29283b239f8db3fd50cae5" alt="blog">
+                <div class="p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Educational</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">CERA TILE</h1>
+                  <p class="leading-relaxed mb-3">We chose CERA Tile for its unrivaled blend of durability, style, and timeless sophistication</p>
+                  <div class="flex items-center flex-wrap ">
+                    <a class="text-yellow-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>1.2K
+                    </span>
+                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://img.freepik.com/premium-photo/brown-marble-tile-texture-interior-background_124507-13553.jpg?w=740" alt="blog">
+                <div class="p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Educational</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3"> Why We Bought The Cera Tile?</h1>
+                  <p class="leading-relaxed mb-3">
+                    We chose CERA Tile for its unrivaled blend of durability, style, and timeless sophistication.</p>
+                  <div class="flex items-center flex-wrap">
+                    <a class="text-yellow-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>1.2K
+                    </span>
+                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://img.freepik.com/premium-photo/abstract-mosaic-texture-tiles_379858-4202.jpg?w=740" alt="blog">
+                <div class="p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Why  Cera Tiles Are The Best Option For You?</h1>
+                  <p class="leading-relaxed mb-3">
+                    CERA tiles stand as the epitome of quality, combining durability with unmatched aesthetic appeal.</p>
+                  <div class="flex items-center flex-wrap ">
+                    <a class="text-yellow-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>1.2K
+                    </span>
+                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Fp3mfI5RXKI?si=XH11KlJWuVEbnpvj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="video1" width="560" height="315" src="https://www.youtube.com/embed/DQggbiElfJc?si=ipGmxdNt9Z5TzJQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </section>
+
+<!-- blog end -->
+
+<!-- calculator start -->
+      <div class="calculatorbg">
+        <h2 class="sm:text-5xl text-2xl font-medium text-center title-font whitetext mb-6">Price Calculator</h2>
+        <div class="calculatorwrap">
+        <label for="squarefeet">Enter Area: </label><br>
+        <input class="input-field" id="SquareFeet" name="squarefeet" type="number" placeholder="Square Feet"><br><br>
+        <label for="SKU">Enter Product SKU</label><br>
+        <input class="input-field" id="ProductSKU" name="SKU" type="text" placeholder="item-number"><br>
+        <button class="lfex ml-auto text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded" id="CalculateBtn">Calculate Price</button>
+        <h4 class="label">Pkr: <span id="resultPrice">00</span></h4>
+        </div>
+    </div>
+<!-- calculator end -->
+<!-- Footer Start -->
+
+<footer class="text-center text-lg-start bg-dark text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-dark text-light">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="grey-bg">
+        <div class="container text-center text-md-start pt-5 text-light">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <!-- <h6 class="text-uppercase fw-bold mb-4">
+      <i class="fas fa-gem me-3"></i>Company name
+    </h6> -->
+                    <img src="logo-transparent.png" alt=""
+                        class="mb-4">
+                    <p>
+                        Cera, your trusted tile company, offers a stunning selection of tiles for every space.
+                        With quality, style, and durability, we transform your vision into reality.
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Products
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Ceramic Tiles</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Kitchen Tiles</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Wall Tiles</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Floor Tiles</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Useful links
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Pricing</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Settings</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Orders</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Help</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        info@example.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                    <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4 orange text-light">
+        © 2023 Copyright all rights reserved:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Cera</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+<!-- Footer End -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="slider.js"></script>
+    <script src="main_nav.js"></script>
+    <script src="expertcorner.js"></script>
+</body>
+</html>
